@@ -1,4 +1,4 @@
-from jumper.Word import Word
+from Word import words
 class Guesser: 
     
     def __init__(self):

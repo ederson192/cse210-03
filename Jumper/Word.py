@@ -1,3 +1,3 @@
-class Word:
-    def_init_(self):
+class words:
+    def __init__(self):
         pass
