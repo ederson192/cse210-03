@@ -1,3 +1,7 @@
+import random
 class words:
+
     def __init__(self):
-        pass
+        self.list = ['stack', 'over', 'flow']
+        word = random.choice(list)
+        
