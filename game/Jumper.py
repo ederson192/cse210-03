@@ -1,4 +1,4 @@
-from Guesser import Guesser
+from game.Guesser import Guesser
 
 class Jumper:
     """Updates the status of Jumper, showing the guesser how many guess they have left. 

@@ -1,11 +1,13 @@
-from Word import words
+from game.Word import Words
+
 class Guesser: 
     
     def __init__(self):
-        self.word = words
+        self.word = Words
         
 
-    def guess (self, word, guess): 
+    def guess (self, word): 
+        guess = input('Guess a letter [a-z]: ')
         word_in_progress = ""
         for letter in word:
             if letter in guess:
