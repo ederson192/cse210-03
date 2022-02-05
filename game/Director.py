@@ -55,9 +55,9 @@ class Director:
             self (Director): An instance of Director.
         """
         self.word_in_progress = self._guesser.guess()
-        
+    
 
-        
+
 
     def _do_outputs(self):
         """Provides a hint for the seeker to use.
