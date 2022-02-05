@@ -17,15 +17,15 @@ class Jumper:
         Args:
             self (Jumper): An instance of Jumper.
         """
-        self._jumper = ['  ___ \n',
-        ' /___\ \n',
-        ' \   / \n',
-        '  \ / \n',
-        '   O  \n',
-        '  /|\ \n',
-        '  / \ \n',
-        '      \n',
-        '^^^^^^^\n']
+        self._jumper = ['  ___',
+        ' /___\ ',
+        ' \   / ',
+        '  \ / ',
+        '   O  ',
+        '  /|\ ',
+        '  / \ ',
+        '      ',
+        '^^^^^^^']
         self.trys = 4
 
         
@@ -40,6 +40,9 @@ class Jumper:
             self.trys -= 1
         if self.trys == 0:
             self._jumper.insert(0,'x')
+            for i in range(len(self._jumper)):
+                print(self._jumper[i])
             quit()
-        
-        return self._jumper
+        for i in range(len(self._jumper)):
+            print(self._jumper[i])
+        return 

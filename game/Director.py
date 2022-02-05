@@ -43,10 +43,9 @@ class Director:
         Args:
             self (Director): An instance of Director.
         """
-        for i in len(self._jumper):
-            print(self._jumper.update_jumper())
-        word = self._words.word
         
+        self._jumper.update_jumper()
+        #self._words.show_word()
         
         
     def _do_updates(self):
@@ -55,7 +54,7 @@ class Director:
         Args:
             self (Director): An instance of Director.
         """
-        word_in_progress = self._guesser.guess
+        self.word_in_progress = self._guesser.guess()
         
 
     def _do_outputs(self):
@@ -64,5 +63,5 @@ class Director:
         Args:
             self (Director): An instance of Director.
         """
-        print(self._jumper.update_jumper())
+        print(self.word_in_progress)
         
