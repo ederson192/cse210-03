@@ -26,7 +26,8 @@ class Jumper:
         '  / \ ',
         '      ',
         '^^^^^^^']
-        self.trys = 4
+        self.trys = 5
+        self._guesser = Guesser()
 
         
     def update_jumper(self):
@@ -35,7 +36,7 @@ class Jumper:
         Returns:
            self._jumper
         """
-        if Guesser is False: 
+        if self._guesser is False: 
             self._jumper.pop(0)
             self.trys -= 1
         if self.trys == 0:

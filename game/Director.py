@@ -57,11 +57,14 @@ class Director:
         self.word_in_progress = self._guesser.guess()
         
 
+        
+
     def _do_outputs(self):
         """Provides a hint for the seeker to use.
 
         Args:
             self (Director): An instance of Director.
         """
-        print(self.word_in_progress)
+        final_word = ''.join(self.word_in_progress)
+        print(f'{final_word}\n')
         
