@@ -36,7 +36,7 @@ class Jumper:
         Returns:
            self._jumper
         """
-        if self._guesser is False: 
+        if self._guesser == False: 
             self._jumper.pop(0)
             self.trys -= 1
         if self.trys == 0:
