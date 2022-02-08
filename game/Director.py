@@ -57,8 +57,6 @@ class Director:
             self (Director): An instance of Director.
         """
         self._jumper.update_jumper(self._guesser.guesser)
-        
-        
 
     def _do_outputs(self):
         """Provides a hint for the seeker to use.
@@ -68,4 +66,6 @@ class Director:
         """
         final_word = ''.join(self.word_in_progress)
         print(f'{final_word}\n')
+
+        #Hello
         
