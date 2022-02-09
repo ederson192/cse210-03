@@ -67,5 +67,8 @@ class Director:
         final_word = ''.join(self.word_in_progress)
         print(f'{final_word}\n')
 
+        if self._guesser.word == final_word:
+            print('You Win!')
+            quit()
         #Hello
         

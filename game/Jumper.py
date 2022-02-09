@@ -43,6 +43,7 @@ class Jumper:
             self._jumper.insert(0,'   x  ')
             for i in range(len(self._jumper)):
                 print(self._jumper[i])
+            print('Game Over')
             quit()
         for i in range(len(self._jumper)):
             print(self._jumper[i])
