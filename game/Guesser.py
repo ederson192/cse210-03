@@ -1,22 +1,20 @@
-from game.Word import Words
+#from game.Word import Words
 import random
 class Guesser: 
     
     def __init__(self):
         
-        self.list = ['stock', 'over', 'flow']
+        self.list = ['stock', 'over', 'flow', 'random', 'hello', 'computer', 'happy', 'python', 'health', 'funny']
         self.word = random.choice(self.list)
         self._word_in_progress = []
         self.j = 0
         self.size = len(self.word)
-        #self.guesser = False
+
         for self.j in self.word:
             self._word_in_progress += '_'
 
     def guess (self): 
-        failed = 0
         self.guesser = False
-        j = 0
 
         guess = input('Guess a letter [a-z]: ')
 
