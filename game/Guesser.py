@@ -1,4 +1,3 @@
-#from game.Word import Words
 import random
 class Guesser: 
     
