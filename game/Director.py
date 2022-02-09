@@ -47,8 +47,6 @@ class Director:
         """
         self.word_in_progress = self._guesser.guess()
         
-        #self._words.show_word()
-        
         
     def _do_updates(self):
         """Keep track of the word and the jumper.
@@ -70,5 +68,3 @@ class Director:
         if self._guesser.word == final_word:
             print('You Win!')
             quit()
-        #Hello
-        
