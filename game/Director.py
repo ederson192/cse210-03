@@ -47,8 +47,6 @@ class Director:
         """
         self.word_in_progress = self._guesser.guess()
         
-        #self._words.show_word()
-        
         
     def _do_updates(self):
         """Keep track of the word and the jumper.
@@ -66,6 +64,7 @@ class Director:
         """
         final_word = ''.join(self.word_in_progress)
         print(f'{final_word}\n')
-
-        #Hello
-        
+     
+        if self._guesser.is_found():
+            self._is_playing = False
+            print ('End of the game')
