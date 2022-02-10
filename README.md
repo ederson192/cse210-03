@@ -29,3 +29,4 @@ root                    (project root folder)
 ## Authors
 * Ederson Villamizar-Escobar (vil21004@byui.edu)
 * Landon Carter (carteronelah@gmail.com)
+* Elizabeth Tellez (tellezelizabethmf@gmail.com)
